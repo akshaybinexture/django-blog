@@ -30,25 +30,25 @@
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
                     <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
-                    <ul class="navbar-nav mr-auto">
-                        <!-- Category Menu Code -->
-                        {% if cat_menu %}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Categories
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby=" navbarDropdown">
-                                {% for item in cat_menu %}
-                                    <a class="dropdown-item" href="{% url 'category' item %} ">{{ item }}
-                                    </a>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
-                        </li>
-                    </ul>
+{#                    <ul class="navbar-nav mr-auto">#}
+{#                        <!-- Category Menu Code -->#}
+{#                        {% if cat_menu %}#}
+{#                        <li class="nav-item dropdown">#}
+{#                            <a class="nav-link dropdown-toggle" href="#"#}
+{#                                id="navbarDropdown" role="button"#}
+{#                                data-toggle="dropdown" aria-haspopup="true"#}
+{#                                aria-expanded="false">#}
+{#                                Categories#}
+{#                            </a>#}
+{#                            <div class="dropdown-menu" aria-labelledby=" navbarDropdown">#}
+{#                                {% for item in cat_menu %}#}
+{#                                    <a class="dropdown-item" href="{% url 'category' item %} ">{{ item }}#}
+{#                                    </a>#}
+{#                                {% endfor %}#}
+{#                            </div>#}
+{#                        {% endif %}#}
+{#                        </li>#}
+{#                    </ul>#}
 
                 </div>
 
